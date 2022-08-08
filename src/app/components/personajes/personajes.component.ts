@@ -41,7 +41,7 @@ export class PersonajesComponent implements OnInit {
   seriesList.forEach((element: { resourceURI: string}) => {
     const item = element.resourceURI;
     console.log("Estoy metida en la lista, por cada elemento su url---", element.resourceURI);
-    this.serieIdService.getSerieId(item).subscribe(result => {
+    this.serieIdService.getSerieURL(item).subscribe(result => {
       console.log("Una vez metida en la lista, este es la serie---", result);
       const id = result.data.results[0].id;
       const title = result.data.results[0].title;
