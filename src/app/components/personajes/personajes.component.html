@@ -1,0 +1,5 @@
+ <div class="flex">
+    <div *ngFor="let personaje of allCharacters; let i = index" class="flex">          
+        <app-card-personaje  [personaje]="personaje" [index]="i" (añadirPersonajeEvento)="guardarPersonaje($event)" class="flex1"></app-card-personaje>
+    </div>
+</div> 

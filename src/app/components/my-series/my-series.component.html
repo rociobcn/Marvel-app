@@ -1,0 +1,10 @@
+<div class="flex color">
+   <p>Quieres eliminar las series que no tienen personajes guardado?</p>
+<button (click)="eliminarSeriesVacias()">Eliminar series vacias</button> 
+</div>
+
+<div class="flex">
+    <div *ngFor="let serie of allSeries; let i = index" class="flex">          
+    <app-card-myserie [serie]="serie" [index]="i" (eliminarSerieEvento)="eliminarSerie($event)"></app-card-myserie>
+    </div>
+</div> 

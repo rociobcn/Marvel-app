@@ -1,0 +1,15 @@
+<div class="flex1">
+    <div class="flex">
+      <img src="{{serie.thumbnailPath}}.{{serie.thumbnailExtension}}" alt="photo">
+    <h4>{{serie.title}}</h4>   
+    </div>
+    <div class="color">
+        <p>ID: <span>{{serie.id}}</span></p>
+    <p>DESCRIPCION: <span>{{serie.description}}</span></p>
+    <p>AÑO: <span>{{serie.startYearPublication}}</span></p>
+    </div>
+    <div class="flex">
+       <button (click)="eliminarSerie()">Borrar</button>  
+    </div>
+    
+ </div>

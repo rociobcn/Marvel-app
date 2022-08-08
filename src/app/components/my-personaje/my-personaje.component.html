@@ -1,0 +1,9 @@
+<div class="flex color">
+    <p>Quieres ver los 5 personajes con más series? Haz click en el botón</p>
+    <button (click)="topfive()">Click here!</button>
+</div>
+<div class="flex">
+    <div *ngFor="let personaje of allCharacters; let i = index" class="flex">          
+        <app-card-mypersonaje [personaje]="personaje" [index]="i" (eliminarPersonajeEvento)="eliminarPersonaje($event)"></app-card-mypersonaje>
+    </div>
+</div> 

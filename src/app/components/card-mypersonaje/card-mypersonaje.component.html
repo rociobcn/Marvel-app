@@ -1,0 +1,15 @@
+<div class="flex1">
+    <div class="flex">
+         <img src="{{personaje.thumbnailPath}}.{{personaje.thumbnailExtension}}" alt="photo">
+    <h4>{{personaje.name}}</h4> 
+    </div>
+   <div class="color">
+     <p>ID: <span>{{personaje.id}}</span></p>
+    <p>DESCRIPCION: <span>{{personaje.description}}</span></p>
+   </div>
+   <div class="flex">
+    <button routerLink="/lista/{{personaje.id}}">Lista de series</button> 
+    <button (click)="eliminarPersonaje()">Borrar</button> 
+   </div>
+    
+ </div>

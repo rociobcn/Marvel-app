@@ -1,0 +1,15 @@
+<div class="flex1">
+    <div class="flex">
+       <img src="{{serie.thumbnail.path +'/standard_medium.'+serie.thumbnail.extension}}" alt="photo">
+    <h4>{{serie.title}}</h4>  
+    </div>
+    <div class="color">
+        <p>ID: <span>{{serie.id}}</span></p>
+    <p>DESCRIPCION: <span>{{serie.description}}</span></p>
+    <p>AÑO: <span>{{serie.startYear}}</span></p>
+    </div>
+    <div class="flex">
+            <button (click)="guardarSerie()">Añadir serie</button> 
+    </div>
+
+ </div>

@@ -1,0 +1,5 @@
+<div class="flex">
+    <div *ngFor="let serie of allSeries; let i = index" class="flex">          
+    <app-card-series [serie]="serie" [index]="i" (añadirSerieEvento)="guardarSerie($event)"></app-card-series>
+    </div>
+</div> 

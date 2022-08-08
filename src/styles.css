@@ -1,0 +1,17 @@
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(https://img.xboxachievements.com/images/monthly_2022_05/news/marvel_universe_c4fd194c-291b-4556-93a2-3d8bd71d7776.jpg); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.55;
+    
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  
+}
